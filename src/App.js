@@ -25,7 +25,7 @@ function App() {
           <p>{t("hello_welcome_my_application")}</p>
           <p>{t("you_can_add_text_here")}</p>
           <form onSubmit={addHandler} >
-            <input value={text} className='input' onChange={e => settext(e.target.value)} />
+            <input value={text} className='input' onChange={e => settext(e.target.value)} disabled />
             <input type="submit" className='submit' value={t("add")} />
           </form>
           <div className='outputContainer' >

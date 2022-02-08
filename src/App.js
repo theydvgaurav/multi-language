@@ -27,11 +27,13 @@ function App() {
   console.log(Notification.permission)
 
   if (Notification.permission === "granted") {
+    alert("granted")
     showNotification();
   }
   else if (Notification.permission !== "denied") {
     Notification.requestPermission().then(permission => {
       if (permission === "granted") {
+        alert("granted")
         showNotification();
       }
     })

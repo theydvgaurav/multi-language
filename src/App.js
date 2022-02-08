@@ -15,26 +15,26 @@ function App() {
     settext('')
   }
 
-  var Notification = window.Notification || window.mozNotification || window.webkitNotification;
+  // var Notification = window.Notification || window.mozNotification || window.webkitNotification;
   
-  const Users = ["Gaurav", "Deepak"]
+  // const Users = ["Gaurav", "Deepak"]
 
-  const showNotification = (props) => {
-    new Notification("Meeting in 10 Minutes", {
-      body: `You are going to have a meeting with ${Users[0]} in 10 Minutes`
-    })
-  }
+  // const showNotification = (props) => {
+  //   new Notification("Meeting in 10 Minutes", {
+  //     body: `You are going to have a meeting with ${Users[0]} in 10 Minutes`
+  //   })
+  // }
   console.log(Notification.permission)
 
   if (Notification.permission === "granted") {
     alert("granted")
-    showNotification();
+    // showNotification();
   }
   else if (Notification.permission !== "denied") {
     Notification.requestPermission().then(permission => {
       if (permission === "granted") {
         alert("granted")
-        showNotification();
+        // showNotification();
       }
     })
   }

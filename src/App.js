@@ -20,7 +20,7 @@ function App() {
   const Users = ["Gaurav", "Deepak"]
 
   const showNotification = (props) => {
-    const notification = new Notification("Meeting in 10 Minutes", {
+    new Notification("Meeting in 10 Minutes", {
       body: `You are going to have a meeting with ${Users[0]} in 10 Minutes`
     })
   }

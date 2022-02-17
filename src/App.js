@@ -47,6 +47,7 @@ function App() {
       </div>
       <div className="App">
         <div className="example-text">
+    <p>Translation of Text is done here</p>
           <p>{t("hello_welcome_my_application")}</p>
           <p>{t("you_can_add_text_here")}</p>
           <form onSubmit={addHandler} >
